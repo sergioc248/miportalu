@@ -1,0 +1,215 @@
+body{
+    background-color: #ffffff;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+} 
+header{
+    display: flex;
+    background-color: #ff992a;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.Logo img{
+    height: 50px;
+    width: 180px;
+}
+nav a{
+    font-weight: 600;
+    font-size: 20px;
+    padding-right: 50px;
+}
+nav a:hover{
+    color: #772a92;
+}
+main{
+    background-color: #ffffff;
+    display: flex;
+}
+section{
+    background-color: #772a92;
+    width: 10%;
+    display: grid;
+    place-items: center;
+    padding: 30px;
+}
+section a{
+    padding-bottom: 15px;
+}
+section a:hover{
+    color: #ff992a;
+}
+section img{
+    height: 50px;
+    width: 50px;
+}
+aside{
+    background-color: #ffffff;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.linea1{
+    width: 90%;
+    height: 1px;
+    background-color: #772a92;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.filtro{
+    background-color: #772a92;
+    width: 80%;
+    height: 150px;
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+    padding: 10px;
+}
+.caja-de-filtro{
+    border-radius: 10px;
+    width: 50%;
+    height: 40px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 15px;
+}
+.filtro b{
+    font-size: 20px;
+}
+button{
+    border-radius: 10px;
+    width: 150px;
+    height: 30px;
+    background-color: #ff992a;
+    font-size: 15px;
+}
+.Hora-Libre{
+    background-color: none;
+    width: 85%;
+}
+.Agrupacion1{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly ;
+    align-items: center;
+}
+.Agrupacion1 img{
+    width: 8%;
+    height: 8%;
+}
+.Agrupacion1 ul{
+    width: 30%;
+}
+.Agrupacion2{
+    display: flex;
+    justify-content: space-evenly;
+}
+.Agrupacion2 ul{
+    width: 50%;
+}
+.Agrupacion2 a{
+    color: black;
+}
+.Group{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+}
+.cajaFiltro{
+    border-radius: 10px;
+    width: 40%;
+    height: 40px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 15px;
+}
+.Group input{
+    width: 40%;
+    height: 40px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 15px;
+}
+.BotonInicio{
+    margin-top: 20px;
+    background-color: #00aef2;
+}
+.BotonInicio:hover{
+    background-color: #0084b6;
+}
+table{
+    width: 80%;
+}
+.News{
+    border-top: 2px solid #772a92;
+    display: flex;
+    justify-content: space-evenly ;
+    align-items: center;
+    padding: 20px;
+}
+.News img{
+    width: 30%;
+    height: 30%;
+    padding-right: 20px;
+}
+td{
+    width: 50%;
+}
+.link22{
+    color: black;
+    border: 2px solid black;
+}
+footer{
+    background-color: #ff992a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 25%;
+    color: #772a92;
+    padding: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+a{
+    text-decoration: none;
+    color: #ffffff;
+    align-items: center;
+}
+button:hover{
+    background-color: #ec8414;
+}
+.LogoU{
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+}
+.LogoU img{
+    height: 100px;
+    width: 50;
+    padding-right: 30px;
+}
+.Info-Unab{
+    border-left: 3px solid #ffffff;
+}
+ul p{
+    font-size: 10px;
+}
+.NuestrosMedios a:hover{
+    color: #772a92;
+}
+.SitiosUNAB a:hover{
+    color: #772a92;
+}
+.RedesSociales a:hover{
+    color: #772a92;
+}

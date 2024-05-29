@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiPortal UNAB</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .header {
+            background-color: #ff9929;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            color: white;
+        }
+        .header img {
+            height: 50px;
+        }
+        .nav {
+            background-color: #ff9929;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+            color: white;
+            font-size: 14px;
+        }
+        .nav div {
+            cursor: pointer;
+            padding: 10px 20px;
+        }
+        .nav div:hover {
+            background-color: #e66b1e;
+            border-radius: 15px;
+        }
+        .container {
+            display: flex;
+        }
+        
+        .left-menu {
+            width: 10%;
+            background-color: #6a1b9a;
+            color: white;
+            padding: 25px 0;
+            text-align: center;
+        }
+        .left-menu div {
+            margin-bottom: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .left-menu div img {
+            margin-bottom: 10px;
+        }
+        .left-menu div span {
+            font-size: 14px;
+        }
+        .left-menu div:hover {
+            background-color: #57147e; 
+        }
+        .content {
+            width: 90%;
+            padding: 30px;
+        }
+        .profile-card {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            border: 2px solid black;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+            display: flex;
+            align-items: center;
+            width:35%;
+            height:30% ;
+        }
+        .profile-card img {
+            width: 100px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        .profile-card p {
+            margin: 20px 0;
+        }
+        .info-sections {
+            display: flex;
+            justify-content: space-between;
+        }
+        .info-box {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 45%;
+        }
+        .info-box img {
+            max-width: 100%;
+        }
+        .info-box button {
+            background-color: #6a1b9a;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .info-box button:hover {
+            background-color: #57147e;
+        }
+        .footer {
+            background-color: #ff9929;
+            color: white;
+            padding: 9px 20px;
+            font-size: 14px;
+        }
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+        .footer-logo {
+            width: 15%;
+        }
+        .footer-logo img {
+            max-width: 100%;
+            height: auto;
+        }
+        .footer-info {
+            width: 40%;
+        }
+        .footer-info p {
+            margin: 5px 0;
+        }
+        .footer-links {
+            width: 40%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .footer-links div {
+            margin-right: 25px;
+        }
+        .footer-links p {
+            margin: 5px 0;
+        }
+        footer{
+            background-color: #ff992a;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 25%;
+            color: #772a92;
+            padding: 50px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        footer a{
+            text-decoration: none;
+            color: #ffffff;
+            align-items: center;
+        }
+        .LogoU{
+            display: flex;
+            align-items: center;
+            color: #ffffff;
+            }
+        .LogoU img{
+            height: 100px;
+            width: 50;
+            padding-right: 30px;
+        }
+        .Info-Unab{
+            border-left: 3px solid #ffffff;
+        }
+        ul p{
+            font-size: 10px;
+        }
+        .NuestrosMedios a:hover{
+            color: #772a92;
+        }
+        .SitiosUNAB a:hover{
+            color: #772a92;
+        }
+        .RedesSociales a:hover{
+            color: #772a92;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="miportalu.png" alt="MiPortal UNAB">
+
+        <div class="nav">
+            <div>Servicios electrónicos</div>
+            <div>Servicios estudiantiles</div>
+            <div>Apoyo al estudiante</div>
+            <div>Información administrativa</div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="left-menu">
+            <div>
+                <img src="Persona.png" alt="Nombre"width="40" height="40">
+                 <span>Nombre Estudiante</span>
+            </div>
+
+            <div>
+                <img src="image.png" alt="Correo"width="40" height="40">
+                <span>Correo</span>
+            </div>
+
+            <div>
+                <img src="image2.png" alt="Cosmos"width="40" height="40">
+                <span>Cosmos</span>
+            </div>
+
+            <div>
+                <img src="bibliteca.png" alt="Biblioteca virtual"width="40" height="40">
+                <span>Biblioteca virtual</span>
+            </div>
+
+            <div>
+                <img src="bienestar.png" alt="Bienestar"width="40" height="40">
+                <span>Bienestar</span>
+            </div>
+
+            <div>
+                <img src="logo3.png" alt="Tema plus"width="70" height="40">
+                <span>Tema plus</span>
+            </div>
+
+            <div>
+                <img src="unabsolo.png" alt="Unab virtual"width="40" height="40">
+                <span>Unab virtual</span>
+            </div>
+
+        </div>
+        <div class="content">
+            <p>Perfil</p>
+            <div class="profile-card">
+                <img src="Persona.png" alt="Profile Picture">
+                <div>
+                    <p><strong>Nombre estudiante</strong></p>
+                    <p>ID</p>
+                    <p>Pregrado profesional</p>
+                    <p>@gmail</p>
+                    <p>TI</p>
+                </div>
+            </div>
+            <div class="info-sections">
+                <div class="info-box">
+                    <h3 style="color: #ff9929;">Actualiza tu información</h3>
+                    <img src="contraseña.png" alt="Cambiar contraseña">
+                    <button>Cambiar</button>
+                </div>
+                <div class="info-box">
+                    <h3 style="color: #ff9929;">Usuarios para acceso a Banner</h3>
+                    <p style="color: #ff9929;">Ingreso como: Estudiante</p>
+                    <p>Usuario:</p>
+                    <p>Programa:</p>
+                    <button>Ingresar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="LogoU">
+            <img src="unab.png">
+            <ul class="Info-Unab">
+                <p>Universidad Autónoma de Bucaramanga</p>
+                <p>Avenida 42 No. 48 - 11 | PBX (7)6436111</p>
+                <p>Bucaramanga - Colombia</p>
+                <p>NIT: 890.200.499-9</p>
+                <p>© Todos los derecehos reservados</p>
+            </ul>
+        </div>
+        <div class="NuestrosMedios">
+            <b>Nuestros Medios</b>
+            <ul class="ListaMedios">
+                <li><a href="https://unabtv.com/" target="_blank">UNAB TV</a></li>
+                <li><a href="https://periodico15unab.blogspot.com/" target="_blank">Periódico 15</a></li>
+                <li><a href="https://unab.edu.co/soy-autonomo-tv/" target="_blank">Soy autónomo TV</a></li>
+                <li><a href="https://unabradio.com/" target="_blank">UNAB Radio</a></li>
+            </ul>
+        </div>
+        <div class="SitiosUNAB">
+            <b>Sitios UNAB</b>
+            <ul>
+                <li><a href="https://unab.edu.co/" target="_blank">Unab</a></li>
+                <li><a href="https://institutocaldas.edu.co/" target="_blank">Instituto Caldas</a></li>
+                <li><a href="https://unabvirtual.unab.edu.co/" target="_blank">Unab Virtual</a></li>
+                <li><a href="https://ulibro.com/" target="_blank">Ulibro</a></li>
+            </ul>
+        </div>
+        <div class="RedesSociales">
+            <b>Redes Sociales</b>
+            <ul>
+                <li><a href="https://www.facebook.com/unab.online" target="_blank">Facebook</a></li>
+                <li><a href="https://x.com/unab_online" target="_blank">X</a></li>
+                <li><a href="https://www.instagram.com/unab_online/" target="_blank">Instagram</a></li>
+                <li><a href="https://www.youtube.com/channel/UCPDX2zfB6gw-UFvWv8B0Zzg" target="_blank">YouTube</a></li>
+                <li><a href="https://www.linkedin.com/school/universidad-autonoma-de-bucaramanga/" target="_blank">Linkedin</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

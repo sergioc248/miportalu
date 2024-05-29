@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiPortal UNAB</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .header {
+            background-color: #ff9929;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            color: white;
+        }
+        .header img {
+            height: 50px;
+        }
+        .nav {
+            background-color: #ff9929;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+            color: white;
+            font-size: 14px;
+        }
+        .nav div {
+            cursor: pointer;
+            padding: 10px 20px;
+        }
+        
+        .nav div img {
+            margin-right: 8px; /* Espacio entre la imagen y el texto */
+        }
+        .nav div:hover {
+            background-color: #e66b1e;
+            border-radius: 15px;
+        }
+        .container {
+            display: flex;
+        }
+        .subnav {
+            background-color:#632896 ;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            color: white;
+            font-size: 14px;
+        }
+        .subnav-left, .subnav-right {
+            display: flex;
+            align-items: center;
+        }
+
+        .subnav-left {
+            justify-content: flex-start;
+            
+        }
+        .subnav-right {
+            justify-content: flex-end;
+        }
+        .subnav-left div, .subnav-right div {
+            cursor: pointer;
+            padding: 0 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .subnav-left div span, .subnav-right div span {
+            margin-top: 5px;  
+        }
+        .subnav-left div:hover, .subnav-right div:hover {
+            background-color: #461d6a;
+            border-radius: 15px;
+        }
+        .container {
+            display: flex;
+        }
+        .left-column {
+            width: 65%;
+            padding: 20px;
+        }
+        .free-hours {
+            width: 600px;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .free-hours-title {
+            font-size: 24px;
+            color: #ff6600;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .free-hours-content {
+            background-color: #dcd9d9;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        
+        .event {
+            background-color: #ffffff;
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .event img {
+            width: 20%;
+            border-radius: 8px;
+        }
+        .event p {
+            margin: 10px 0 5px;
+            font-size: 14px;
+        }
+        .event strong {
+            font-size: 16px;
+        }
+        .footer {
+            background-color: #ff9929;
+            color: white;
+            padding: 9px 20px;
+            font-size: 14px;
+        }
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+        .footer-logo {
+            width: 15%;
+        }
+        .footer-logo img {
+            max-width: 100%;
+            height: auto;
+        }
+        .footer-info {
+            width: 40%;
+        }
+        .footer-info p {
+            margin: 5px 0;
+        }
+        .footer-links {
+            width: 40%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .footer-links div {
+            margin-right: 25px;
+        }
+        .footer-links p {
+            margin: 5px 0;
+        }
+        footer{
+            background-color: #ff992a;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 25%;
+            color: #772a92;
+            padding: 50px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        footer a{
+            text-decoration: none;
+            color: #ffffff;
+            align-items: center;
+        }
+        .LogoU{
+            display: flex;
+            align-items: center;
+            color: #ffffff;
+            }
+        .LogoU img{
+            height: 100px;
+            width: 50;
+            padding-right: 30px;
+        }
+        .Info-Unab{
+            border-left: 3px solid #ffffff;
+        }
+        ul p{
+            font-size: 10px;
+        }
+        .NuestrosMedios a:hover{
+            color: #772a92;
+        }
+        .SitiosUNAB a:hover{
+            color: #772a92;
+        }
+        .RedesSociales a:hover{
+            color: #772a92;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="miportalu.png" alt="MiPortal UNAB">
+        <div class="nav">
+            <div>Servicios electrónicos</div>
+            <div>Servicios estudiantiles</div>
+            <div>Apoyo al estudiante</div>
+            <div>Información administrativa</div>
+        </div>
+    </div>
+    <div class="subnav">
+        <div class="subnav-left">
+            <div>
+                <span>Nombre estudiante</span>
+                <a href="pagina perfil.html" target="_blank"><button style="font-size: 12px;background-color: #411b58; color: white;border-radius: 4px;">Perfil</button></a>
+                <a href="Html/inicio.html"><button style="font-size: 12px;background-color: rgb(238, 54, 54); color: white;border-radius: 4px;">Cerrar sesión</button></a>
+             </div>
+        </div>
+        <div class="subnav-right">
+            <div>
+                <img src="eventos.png" alt="Eventos"width="40" height="40">
+                <span>Eventos</span>
+            </div>
+            <div>
+                <img src="hostal.png" alt="Hostal"width="40" height="40">
+                <span>Hostal</span>
+            </div>
+            <div>
+                <img src="contacto.png" alt="Contacto"width="40" height="40">
+                <span>Contacto</span>
+            </div>
+            <div>
+                <img src="4cuadrados.png" alt="Accesos rápidos"width="40" height="40">
+                <span>Accesos rápidos</span>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="left-column">
+            <p style="font-size: 25px;background-color: rgb(211, 134, 238); color: white;border-radius: 4px;text-align: center;"><strong>NOTICIAS</strong></p>
+            <div class="event">
+                <img src="noticias1.jpeg" alt="Noticias UNAB"width="40" height="80">
+                <p><strong>Fecha 17-ABR-24</strong></p>
+                <p>Charla: "Potencia tu hoja de vida con estrategias innovadoras de IA"</p>
+            </div>
+            <div class="event">
+                <img src="noticias2.jpeg" alt="Noticias UNAB"width="40" height="80">
+                <p><strong>Fecha 15-ABR-24</strong></p>
+                <p>Información para presentar la prueba de homologación institucional TEP</p>
+            </div>
+            <div class="event">
+                <img src="noticias3.jpeg" alt="Noticias UNAB"width="40" height="80">
+                <p><strong>Fecha 01-ABR-24</strong></p>
+                <p>Examen diagnóstico de inglés para estudiantes pregrado profesional</p>
+            </div>
+            <a href="Noticias.html"><button style="border-radius: 8px;background-color: rgb(211, 134, 238);width: 10%;height: 4%;font-size: 15px;">Más noticias</button></a>
+        </div>
+        <section class="free-hours">
+            <div class="free-hours-title">Horas libres</div>
+            <div class="free-hours-content">
+                <img src="mayo.png" alt="Imagen del evento">
+                <div class="event-title">HERRAMIENTAS DE AFRONTAMIENTO</div>
+                <div class="event-validity">Válido por horas libres</div>
+                <div class="event-description">Que el estrés no domine tu vida</div>
+                <div class="event-date">
+                    <strong>FECHA:</strong> jueves 23 de mayo
+                </div>
+                <div class="event-time">
+                    <strong>HORA:</strong> 07:00 PM - 07:45 PM
+                </div>
+                <div class="event-location">
+                    <strong>LUGAR:</strong> Actividad Virtual - link Meet: <a href="https://meet.google.com/qph-sfmx-dmy">meet.google.com/qph-sfmx-dmy</a>
+                </div>
+                <div class="event-assistance">Asistencia válida por 1 hora libre</div>
+            </div>
+            <a href="HorasLibres.html"><button style="border-radius: 8px;background-color: rgb(211, 134, 238);width: 30%;height: 4%;font-size: 15px;margin-top: 20px;">Más horas libres</button></a>
+        </section>
+    </div>
+    <footer>
+        <div class="LogoU">
+            <img src="unab.png">
+            <ul class="Info-Unab">
+                <p>Universidad Autónoma de Bucaramanga</p>
+                <p>Avenida 42 No. 48 - 11 | PBX (7)6436111</p>
+                <p>Bucaramanga - Colombia</p>
+                <p>NIT: 890.200.499-9</p>
+                <p>© Todos los derecehos reservados</p>
+            </ul>
+        </div>
+        <div class="NuestrosMedios">
+            <b>Nuestros Medios</b>
+            <ul class="ListaMedios">
+                <li><a href="https://unabtv.com/" target="_blank">UNAB TV</a></li>
+                <li><a href="https://periodico15unab.blogspot.com/" target="_blank">Periódico 15</a></li>
+                <li><a href="https://unab.edu.co/soy-autonomo-tv/" target="_blank">Soy autónomo TV</a></li>
+                <li><a href="https://unabradio.com/" target="_blank">UNAB Radio</a></li>
+            </ul>
+        </div>
+        <div class="SitiosUNAB">
+            <b>Sitios UNAB</b>
+            <ul>
+                <li><a href="https://unab.edu.co/" target="_blank">Unab</a></li>
+                <li><a href="https://institutocaldas.edu.co/" target="_blank">Instituto Caldas</a></li>
+                <li><a href="https://unabvirtual.unab.edu.co/" target="_blank">Unab Virtual</a></li>
+                <li><a href="https://ulibro.com/" target="_blank">Ulibro</a></li>
+            </ul>
+        </div>
+        <div class="RedesSociales">
+            <b>Redes Sociales</b>
+            <ul>
+                <li><a href="https://www.facebook.com/unab.online" target="_blank">Facebook</a></li>
+                <li><a href="https://x.com/unab_online" target="_blank">X</a></li>
+                <li><a href="https://www.instagram.com/unab_online/" target="_blank">Instagram</a></li>
+                <li><a href="https://www.youtube.com/channel/UCPDX2zfB6gw-UFvWv8B0Zzg" target="_blank">YouTube</a></li>
+                <li><a href="https://www.linkedin.com/school/universidad-autonoma-de-bucaramanga/" target="_blank">Linkedin</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
